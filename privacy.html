@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - XoDown</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: rgba(22, 27, 46, 0.75);
+      --border: rgba(255, 255, 255, 0.12);
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --heading: #ffffff;
+      --brand: #38bdf8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px 32px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(12px);
+    }
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    .logo-badge {
+      display: inline-block;
+      padding: 6px 16px;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--brand);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 99px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    h1 { font-size: 32px; color: var(--heading); margin-bottom: 8px; font-weight: 800; }
+    .date { color: var(--text-muted); font-size: 14px; }
+    h2 {
+      color: var(--heading);
+      font-size: 20px;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 18px;
+      background: var(--brand);
+      border-radius: 2px;
+    }
+    p, ul { margin-bottom: 16px; color: var(--text); font-size: 15px; }
+    ul { padding-left: 24px; }
+    li { margin-bottom: 8px; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+    .footer {
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+      padding-top: 24px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo-badge">XoDown</div>
+      <h1>Privacy Policy</h1>
+      <p class="date">Last updated: November 15, 2026</p>
+    </div>
 
+    <p>Welcome to <strong>XoDown</strong> ("we", "our", or "us"). We respect your privacy and are committed to protecting any information associated with your use of our mobile application. This Privacy Policy outlines our practices regarding data collection, usage, and disclosure when you use the XoDown application.</p>
+
+    <h2>1. Information We Do NOT Collect</h2>
+    <p>XoDown is built with a privacy-first mindset:</p>
+    <ul>
+      <li><strong>No Account Required:</strong> You can use all features of XoDown without creating an account or providing your name, email, or personal details.</li>
+      <li><strong>No File Storage on Our Servers:</strong> Files, videos, and media you download through XoDown are downloaded directly from the target web sources to your personal device. We do not store, view, or host your downloaded files on our servers.</li>
+      <li><strong>No Browsing History Stored:</strong> Links and URLs you paste into the app are processed locally on your device to initiate the download.</li>
+    </ul>
+
+    <h2>2. Information Collected Automatically & Third-Party Services</h2>
+    <p>To support development and offer our services for free, XoDown integrates trusted third-party services that may automatically collect certain diagnostic and advertising data:</p>
+
+    <div class="card">
+      <strong>Google AdMob</strong>
+      <p style="margin-top: 6px; font-size: 14px; color: var(--text-muted);">
+        We display ads via Google AdMob (interstitial and banner ads). Google AdMob may collect and process information such as:
+      </p>
+      <ul style="font-size: 14px; margin-bottom: 0;">
+        <li>IP address and approximate coarse location.</li>
+        <li>Advertising identifiers (e.g., Google Advertising ID - GAID).</li>
+        <li>App interactions, ad performance metrics, and device diagnostics.</li>
+      </ul>
+      <p style="margin-top: 8px; font-size: 13px;">
+        For details on how Google handles advertising data, visit <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Advertising Technologies</a>.
+      </p>
+    </div>
+
+    <h2>3. Permissions Used by XoDown</h2>
+    <p>The app requests the following system permissions exclusively to perform its core download functions:</p>
+    <ul>
+      <li><strong>INTERNET & ACCESS_NETWORK_STATE:</strong> Required to connect to content servers and download media files, as well as fetch ads.</li>
+      <li><strong>POST_NOTIFICATIONS:</strong> Used on Android 13+ to show download progress, speed, and completion alerts in your system notification bar.</li>
+      <li><strong>FOREGROUND_SERVICE (Data Sync):</strong> Ensures your downloads continue smoothly in the background even if you switch apps or lock your screen.</li>
+      <li><strong>STORAGE / SAF (Storage Access Framework):</strong> Enables you to select custom folders on your device (e.g., Downloads folder or SD Card) to save your downloaded files safely.</li>
+    </ul>
+
+    <h2>4. Protection of Intellectual Property & Legal Use</h2>
+    <p>XoDown is an independent utility tool designed for personal media downloads. Users are solely responsible for ensuring that they have the right to download and use the content they access. XoDown strictly enforces compliance and automatically blocks downloads from protected DRM streaming platforms (such as Netflix, OSN, Shahid, Disney+, YouTube, etc.).</p>
+
+    <h2>5. Children's Privacy</h2>
+    <p>Our service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13.</p>
+
+    <h2>6. Security of Your Data</h2>
+    <p>We prioritize the security of your device. Since all downloads are executed directly on your device, no sensitive download data or file content is transmitted to our servers.</p>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy periodically. Any updates will be published on this page with an updated "Last updated" date.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>If you have any questions, feedback, or inquiries regarding this Privacy Policy, please contact us at:</p>
+    <div class="card">
+      <p style="margin: 0;"><strong>Email:</strong> <a href="mailto:support@xodown.app">support@xodown.app</a></p>
+      <p style="margin-top: 6px; margin-bottom: 0;"><strong>Application:</strong> XoDown for Android</p>
+    </div>
+
+    <div class="footer">
+      &copy; 2026 XoDown. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
